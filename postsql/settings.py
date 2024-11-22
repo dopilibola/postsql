@@ -64,8 +64,12 @@ WSGI_APPLICATION = 'postsql.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgrest',  # Yangi bazaning nomi
+        'USER': 'user',      # PostgreSQL foydalanuvchisi
+        'PASSWORD': 'qwazar2005',   # Foydalanuvchi paroli
+        'HOST': 'localhost',           # Yoki remote server manzili
+        'PORT': '5432',                # PostgreSQL standarti
     }
 }
 
